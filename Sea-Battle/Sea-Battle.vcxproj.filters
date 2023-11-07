@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{c9451b32-e332-4a7b-9543-0adbbfdfb361}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\ImGui">
+      <UniqueIdentifier>{d89da31a-27fc-44c1-8cc7-947c93c6fc46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawing">
+      <UniqueIdentifier>{89e9db37-8b36-4279-888d-045b4dca7bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{6feaa51c-a891-4a71-8883-ed93cdc96ed5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SDK\ImGui\imconfig.h">
+      <Filter>SDK\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\ImGui\imgui.h">
+      <Filter>SDK\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\ImGui\imgui_impl_dx11.h">
+      <Filter>SDK\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\ImGui\imgui_impl_win32.h">
+      <Filter>SDK\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\ImGui\imgui_internal.h">
+      <Filter>SDK\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\ImGui\imstb_rectpack.h">
+      <Filter>SDK\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\ImGui\imstb_textedit.h">
+      <Filter>SDK\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\ImGui\imstb_truetype.h">
+      <Filter>SDK\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UI.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawing\Drawing.h">
+      <Filter>Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_render.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\color.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="image_bytes.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SDK\ImGui\imgui.cpp">
+      <Filter>SDK\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\ImGui\imgui_demo.cpp">
+      <Filter>SDK\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\ImGui\imgui_draw.cpp">
+      <Filter>SDK\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\ImGui\imgui_impl_dx11.cpp">
+      <Filter>SDK\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\ImGui\imgui_impl_win32.cpp">
+      <Filter>SDK\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\ImGui\imgui_tables.cpp">
+      <Filter>SDK\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\ImGui\imgui_widgets.cpp">
+      <Filter>SDK\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UI.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawing\Drawing.cpp">
+      <Filter>Drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_render.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
