@@ -180,6 +180,8 @@ void UI::Render()
     ImGui_ImplWin32_Init(mainWindowHandle);
     ImGui_ImplDX11_Init(pd3dDevice, pd3dDeviceContext);
 
+    ImFont* mdFont = io.Fonts->AddFontFromFileTTF("C:\\Windows\\Fonts\\arialbi.ttf", 14.f, nullptr, ImGui::GetIO().Fonts->GetGlyphRangesCyrillic()); // Tahoma.ttf good
+
     constexpr ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
     bool bDone = false;

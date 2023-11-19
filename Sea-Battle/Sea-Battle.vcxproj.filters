@@ -25,6 +25,9 @@
     <Filter Include="UI">
       <UniqueIdentifier>{6feaa51c-a891-4a71-8883-ed93cdc96ed5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ship">
+      <UniqueIdentifier>{b43df259-130f-48ab-8453-4742ca682f4d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SDK\ImGui\imconfig.h">
@@ -72,6 +75,9 @@
     <ClInclude Include="image_bytes.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="Ship\Ship.h">
+      <Filter>Ship</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SDK\ImGui\imgui.cpp">
@@ -106,6 +112,9 @@
     </ClCompile>
     <ClCompile Include="imgui_render.cpp">
       <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Ship\Ship.cpp">
+      <Filter>Ship</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

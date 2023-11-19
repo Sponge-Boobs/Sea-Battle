@@ -1,14 +1,19 @@
 #pragma once
 
+#define _CRT_SECURE_NO_WARNINGS
+
 // global includes (WinApi)
 #include <iostream>
 #include <Windows.h>
 
 // other (name later for includes...)
 #include <tchar.h>
+#include <string>
 
+#define IMGUI_DEFINE_MATH_OPERATORS
 // ImGui includes
 #include "SDK/ImGui/imgui.h"
+#include "SDK/ImGui/imgui_internal.h"
 #include "SDK/ImGui/imgui_impl_dx11.h"
 #include "SDK/ImGui/imgui_impl_win32.h"
 

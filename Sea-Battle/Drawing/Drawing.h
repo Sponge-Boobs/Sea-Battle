@@ -38,17 +38,27 @@ enum ImGuiCustomTexture_
 class Drawing
 {
 private:
-	//static LPCSTR lpWindowName;
-	//static ImVec2 vWindowSize;
-	//static DWORD WindowFlags;
 	static bool bDraw;
 
+
 public:
+	static constexpr int gridSize = 10; // Размер сетки поля
+	static bool playerField[gridSize][gridSize]; // Игровое поле игрока
+	static bool opponentField[gridSize][gridSize]; // Игровое поле оппонента
+
 	static void CenterWindow();
 	static void Active();
 	static bool isActive();
-	static void Draw();
 	static void RenderNote();
+	static void DrawCube();
+	static void Draw();
+
+	static void DrawTextAboveGrid(ImVec2 cellSize);
+	static void AddDot(const ImVec2& center, float radius, const Color& color);
+
+	//static void DrawGrid(bool field[gridSize][gridSize], ImVec2 cellSize);
+	static void DrawGrid(ImVec2 cellSize);
+	static void DrawTextCentered(ImDrawList* drawList, const ImVec2& position, const char* text, ImU32 color, float fontSize);
 
 	static void SetStyles();
 	static Color GetColor(ImGuiCustomCol idx);
