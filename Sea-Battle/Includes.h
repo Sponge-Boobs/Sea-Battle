@@ -9,6 +9,7 @@
 // other (name later for includes...)
 #include <tchar.h>
 #include <string>
+#include <random>
 
 #define IMGUI_DEFINE_MATH_OPERATORS
 // ImGui includes

@@ -22,6 +22,9 @@ public:
     // Проверяет, был ли корабль полностью потоплен
     bool isSunk() const;
 
+    // Метод getHits
+    const std::vector<bool>& getHits() const { return hits; }
+
 private:
     // Возвращает индекс клетки корабля по ее координатам
     int getIndex(int x, int y) const;

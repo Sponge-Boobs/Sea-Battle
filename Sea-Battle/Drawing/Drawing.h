@@ -2,9 +2,9 @@
 #define DRAWING_H
 
 #include "../Includes.h"
+#include "../Ship/Ship.h"
 #include "../imgui_render.h"
 #include "../globals.h"
-#include "../image_bytes.h"
 
 typedef int ImGuiCustomCol;
 typedef int ImGuiCustomTexture;
@@ -49,14 +49,22 @@ public:
 	static void CenterWindow();
 	static void Active();
 	static bool isActive();
+
+	// Функции для генерации кораблей
+	static bool CanPlaceShip(int shipStartX, int shipStartY, int shipEndX, int shipEndY);
+	static void PlaceShip(int shipStartX, int shipStartY, int shipEndX, int shipEndY);
+	static void GenerateShips();
+
+
 	static void RenderNote();
 	static void DrawCube();
 	static void Draw();
 
 	static void DrawTextAboveGrid(ImVec2 cellSize);
 	static void AddDot(const ImVec2& center, float radius, const Color& color);
+	static void AddCross(const ImVec2& a, const ImVec2& b, Color color, float thickness);
 
-	//static void DrawGrid(bool field[gridSize][gridSize], ImVec2 cellSize);
+
 	static void DrawGrid(ImVec2 cellSize);
 	static void DrawTextCentered(ImDrawList* drawList, const ImVec2& position, const char* text, ImU32 color, float fontSize);
 
